@@ -67,6 +67,7 @@ exports.route = [
         },
         handler: function (req, reply) {
             var service = req.headers.service
+            var operation = req.headers.operation
 
             console.log('gateway got req: ', req);
 
@@ -80,6 +81,7 @@ exports.route = [
             if (_.includes(Object.keys(microservicesClientInfo), service)) {
                 const input = {
                     service: service,
+                    operation: operation,
                     headers: req.headers,
                     body: req.payload,
                     query: req.query,
