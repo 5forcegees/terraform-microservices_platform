@@ -160,5 +160,15 @@ exports.route = [
                 })
             }
         }
+    },
+    {
+        method: ['GET'],
+        path: '/ping',
+        config: {
+            cors: true
+        },
+        handler: function (req, reply) {
+            reply("pong")
+        }
     }
 ]
