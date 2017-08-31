@@ -7,7 +7,6 @@ It will also perform functions that must be performed on every request/response
     Validate and decode the token with every request
     log the request and response for every request with the transaction logger
     etc
-
     
     Basic Structure:
     
