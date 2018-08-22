@@ -30,7 +30,7 @@ It will also perform functions that must be performed on every request/response
     
         // clone the gateway
         // --depth 1 removes all but one .git commit history
-        git clone --depth 1 ssh://git@innersource.accenture.com/nmi/node-gateway.git
+        git clone --depth 1 git@github.com:5forcegees/node_microservices-gateway.git
         
         // change directory into the gateway
         cd node-gateway
@@ -53,6 +53,6 @@ It will also perform functions that must be performed on every request/response
               -H 'service: hello'
         
         The gateway uses microservices to perform functions.  Check out these microservices to see it all working together:
-        https://innersource.accenture.com/projects/NMI/repos/hackernews
-        https://innersource.accenture.com/projects/NMI/repos/hello
+        https://github.com/5forcegees/node_microservices-hackerNews
+        https://github.com/5forcegees/node_microservices-hello
     
